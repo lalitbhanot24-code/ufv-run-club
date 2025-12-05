@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About – UFV Run Club App</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Helvetica", Arial, sans-serif;
+    }
+
+    body {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url('UFV-Drone-Shot.jpg');
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #004b8d, #006bb3);
+      padding: 20px 0;
+      color: #fff;
+      margin-bottom: 30px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    nav a {
+      color: #fff;
+      background: rgba(255,255,255,0.15);
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: rgba(255,255,255,0.35);
+    }
+    nav a[href="about.html"] {
+      background: #00c853;
+      font-weight: bold;
+    }
+    .text-box {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 25px;
+      border-radius: 12px;
+      max-width: 900px;
+      margin: 0 auto 30px auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      text-align: center;
+    }
+
+    .text-box h2 {
+      font-size: 32px;
+      color: #004b8d;
+      margin-bottom: 20px;
+    }
+
+    .text-box p {
+      font-size: 17px;
+      line-height: 1.6;
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    /* SECTION TITLE */
+    h3 {
+      text-align: center;
+      font-size: 26px;
+      color: #004b8d;
+      margin: 25px 0 15px;
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      max-width: 900px;
+      margin: 0 auto 40px auto;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .about-card {
+      background: #ffffff;
+      padding: 22px 24px;
+      border-radius: 12px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .about-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+    }
+
+    .about-card h4 {
+      color: #004b8d;
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+
+    .about-card p {
+      font-size: 15.5px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* LIST SECTION */
+    ul {
+      max-width: 600px;
+      margin: 0 auto 40px auto;
+      padding-left: 25px;
+      font-size: 17px;
+      color: #444;
+      line-height: 1.7;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #e9ecef;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #555;
+    }
+    .who-box {
+  background: rgba(255, 255, 255, 0.85);
+
+}
+
+  </style>
+
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>UFV Run Club App</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="runtracker.html">Run Tracker</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="ethics.html">Ethics</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="challenges.html">Challenges</a></li>
+        <li><a href="donations.html">Donations</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- VISIBLE TEXT SECTION FIXED -->
+  <div class="text-box">
+    <h2>About the Project</h2>
+    <p>
+      The UFV Run Club App began after a generous donation supporting a non-profit  
+      initiative aimed at transforming health, wellness, and community connection  
+      at the University of the Fraser Valley.
+    </p>
+
+    <p>
+      The app demonstrates how technology can be ethical, transparent, and  
+      fully focused on student well-being — unlike traditional fitness apps  
+      designed for profit.
+    </p>
+  </div>
+
+  <h3>Our Mission</h3>
+
+  <div class="about-grid">
+
+    <div class="about-card">
+      <h4>Ethical Technology</h4>
+      <p>
+        The platform is built using ethical principles that protect privacy,  
+        promote fairness, and ensure transparency across all features.
+      </p>
+    </div>
+
+    <div class="about-card">
+      <h4>Non-Profit Focus</h4>
+      <p>
+        Every dollar raised is reinvested into UFV scholarships, mental health  
+        support, and student-led events that strengthen the campus community.
+      </p>
+    </div>
+
+    <div class="about-card">
+      <h4>Community Wellness</h4>
+      <p>
+        Encourages movement, connection, and healthy lifestyles through  
+        inclusive weekly run events and friendly challenges.
+      </p>
+    </div>
+
+    <div class="about-card">
+      <h4>Student-Centered Design</h4>
+      <p>
+        Built by UFV students, for UFV students — focusing on accessibility,  
+        simplicity, and long-term community impact.
+      </p>
+    </div>
+
+  </div>
+
+  <h3>Who Is This For?</h3>
+<div class="who-box">
+  <ul>
+    <li>UFV students</li>
+    <li>UFV staff and faculty</li>
+    <li>UFV alumni</li>
+    <li>Community members supporting UFV wellness</li>
+  </ul>
+</div>
+</main>
+
+<footer>
+  <p>&copy; 2025 UFV Run Club App – Non-profit student project.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact – UFV Run Club App</title>
+
+  <!-- INTERNAL CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Helvetica", Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f7fa;
+      color: #333;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #004b8d, #006bb3);
+      padding: 20px 0;
+      color: #fff;
+      margin-bottom: 30px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    nav a {
+      color: #fff;
+      background: rgba(255,255,255,0.15);
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: rgba(255,255,255,0.35);
+    }
+
+    /* ACTIVE TAB */
+    nav a[href="contact.html"] {
+      background: #00c853;
+      font-weight: bold;
+    }
+
+    /* TITLE */
+    main h2 {
+      text-align: center;
+      font-size: 32px;
+      color: #004b8d;
+      margin-bottom: 20px;
+    }
+
+    main p {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 20px auto;
+      font-size: 17px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    /* CONTACT CARD */
+    .contact-card {
+      max-width: 600px;
+      margin: 20px auto 40px auto;
+      background: #ffffff;
+      padding: 25px 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+      animation: fadeIn 0.5s ease-in-out;
+      text-align: center;
+    }
+
+    .contact-card h3 {
+      color: #004b8d;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .contact-card p {
+      margin-bottom: 12px;
+      font-size: 16px;
+      color: #444;
+    }
+
+    .contact-info-label {
+      font-weight: bold;
+      color: #004b8d;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #e9ecef;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* ANIMATION */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>UFV Run Club App</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="runtracker.html">Run Tracker</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="ethics.html">Ethics</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="challenges.html">Challenges</a></li>
+        <li><a href="donations.html">Donations</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <h2>Contact Us</h2>
+
+  <p>
+    Have questions about the UFV Run Club App, events, donations, or partnerships?  
+    Our student-led team is here to help!
+  </p>
+
+  <div class="contact-card">
+    <h3>Get in Touch</h3>
+
+    <p>
+      <span class="contact-info-label">Email:</span>  
+      ufvrunclub@example.com
+    </p>
+
+    <p>
+      <span class="contact-info-label">Location:</span>  
+      University of the Fraser Valley – Abbotsford Campus
+    </p>
+
+    <p>
+      <em>In a full version, this page would include a contact form, phone support, and live chat.</em>
+    </p>
+  </div>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 UFV Run Club App – Non-profit student project.</p>
+</footer>
+
+</body>
+</html>

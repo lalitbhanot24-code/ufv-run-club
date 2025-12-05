@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Community – UFV Run Club App</title>
+
+  <!-- INTERNAL CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Helvetica", Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f7fa;
+      color: #333;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #004b8d, #006bb3);
+      padding: 20px 0;
+      color: #fff;
+      margin-bottom: 30px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    nav a {
+      color: #fff;
+      background: rgba(255,255,255,0.15);
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: rgba(255,255,255,0.35);
+    }
+
+    /* ACTIVE TAB */
+    nav a[href="community.html"] {
+      background: #00c853;
+      font-weight: bold;
+    }
+
+    /* TITLE */
+    main h2 {
+      text-align: center;
+      font-size: 32px;
+      color: #004b8d;
+      margin-bottom: 20px;
+    }
+
+    main p {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 25px auto;
+      font-size: 17px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    /* COMMUNITY GRID */
+    .community-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      max-width: 900px;
+      margin: 0 auto 40px auto;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .community-card {
+      background: #ffffff;
+      padding: 22px 24px;
+      border-radius: 12px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .community-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+    }
+
+    .community-card h3 {
+      color: #004b8d;
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .community-card p {
+      font-size: 15.5px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* ANIMATION */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #e9ecef;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>UFV Run Club App</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="runtracker.html">Run Tracker</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="ethics.html">Ethics</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="challenges.html">Challenges</a></li>
+        <li><a href="donations.html">Donations</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <h2>Building a Stronger UFV Community</h2>
+
+  <p>
+    The UFV Run Club App is more than a fitness platform — it’s a space for students, 
+    employees, alumni, and local residents to come together, build connections, and 
+    support one another through shared health and wellness goals.
+  </p>
+
+  <div class="community-grid">
+
+    <div class="community-card">
+      <h3>Weekly Social Runs</h3>
+      <p>
+        Join our Saturday community runs to stay motivated, active, and connected.  
+        All fitness levels are welcome — walk, jog, or run!
+      </p>
+    </div>
+
+    <div class="community-card">
+      <h3>Meet New Friends & Mentors</h3>
+      <p>
+        Build meaningful friendships with peers, faculty, alumni, and community 
+        leaders who share a passion for wellness.
+      </p>
+    </div>
+
+    <div class="community-card">
+      <h3>Wellness Support Network</h3>
+      <p>
+        Participate in a safe, encouraging environment that promotes mental,  
+        physical, and emotional well-being.
+      </p>
+    </div>
+
+    <div class="community-card">
+      <h3>Local Business Partnerships</h3>
+      <p>
+        Enjoy events and sponsorships supported by Fraser Valley businesses, 
+        creating a stronger relationship between UFV and the community.
+      </p>
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 UFV Run Club App – Non-profit student project.</p>
+</footer>

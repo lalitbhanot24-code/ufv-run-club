@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Features – UFV Run Club App</title>
+
+  <!-- INTERNAL CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Helvetica", Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f7fa;
+      color: #333;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #004b8d, #006bb3);
+      padding: 20px 0;
+      color: #fff;
+      margin-bottom: 30px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    nav a {
+      color: #fff;
+      background: rgba(255,255,255,0.15);
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: rgba(255,255,255,0.35);
+    }
+
+    /* ACTIVE NAV BUTTON */
+    nav a[href="features.html"] {
+      background: #00c853;
+      font-weight: bold;
+    }
+
+    /* PAGE TITLE */
+    main h2 {
+      text-align: center;
+      font-size: 32px;
+      color: #004b8d;
+      margin-bottom: 25px;
+    }
+
+    /* FEATURES GRID */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      max-width: 900px;
+      margin: 0 auto 40px auto;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .feature-card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+    }
+
+    .feature-card h3 {
+      margin-bottom: 12px;
+      color: #004b8d;
+      font-size: 22px;
+    }
+
+    .feature-card p {
+      font-size: 16px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    /* ANIMATION */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #e9ecef;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>UFV Run Club App</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="runtracker.html">Run Tracker</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="ethics.html">Ethics</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="challenges.html">Challenges</a></li>
+        <li><a href="donations.html">Donations</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h2>App Features</h2>
+
+  <div class="features-grid">
+
+    <div class="feature-card">
+      <h3>Weekly Saturday Run Tracking</h3>
+      <p>Log your weekly runs for the entire year and stay consistent with your goals.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Personal Stats Dashboard</h3>
+      <p>View detailed insights including distance, pace, streaks, and progress charts.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Friend Challenges</h3>
+      <p>Compete with classmates and friends through fun fitness challenges.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Inclusive Events</h3>
+      <p>Run, jog, or walk — all fitness levels are welcome in our UFV wellness community.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Non-Profit Fundraising</h3>
+      <p>Every run helps raise funds for UFV scholarships and student support programs.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Privacy & Transparency</h3>
+      <p>Your data is protected with clear privacy policies and transparent handling.</p>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 UFV Run Club App – Non-profit student project.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Run Tracker – UFV Run Club App</title>
+
+  <!-- INTERNAL CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Helvetica", Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f7fa;
+      color: #333;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #004b8d, #006bb3);
+      padding: 20px 0;
+      color: #fff;
+      margin-bottom: 30px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    nav a {
+      color: #fff;
+      background: rgba(255,255,255,0.15);
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: rgba(255,255,255,0.35);
+    }
+
+    /* PAGE TITLE */
+    main h2 {
+      text-align: center;
+      font-size: 32px;
+      color: #004b8d;
+      margin-bottom: 10px;
+    }
+
+    main p {
+      text-align: center;
+      font-size: 17px;
+      margin-bottom: 25px;
+    }
+
+    /* FEATURE CARD GRID */
+    .feature-section-title {
+      font-size: 26px;
+      color: #004b8d;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    .feature-list {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 20px 25px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .feature-list ul {
+      margin-left: 20px;
+      line-height: 1.8;
+      font-size: 17px;
+    }
+
+    .feature-list li {
+      margin-bottom: 8px;
+      color: #444;
+    }
+
+    /* FEATURE NOTE */
+    .note {
+      text-align: center;
+      margin-top: 25px;
+      font-size: 15px;
+      font-style: italic;
+      color: #555;
+    }
+
+    /* ANIMATION */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #e9ecef;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>UFV Run Club App</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="runtracker.html" style="background:#00c853;">Run Tracker</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="ethics.html">Ethics</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="challenges.html">Challenges</a></li>
+        <li><a href="donations.html">Donations</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h2>Run Tracker</h2>
+  <p>The Run Tracker will allow you to log your weekly runs, track progress, and compare your stats over time.</p>
+
+  <h3 class="feature-section-title">Planned Features</h3>
+
+  <div class="feature-list">
+    <ul>
+      <li>Simple form to log date, distance, and time.</li>
+      <li>A dashboard showing your total weekly, monthly, and yearly kilometres.</li>
+      <li>Progress charts to visualize improvement.</li>
+      <li>Option to export or share your progress with friends.</li>
+      <li>Integration with smartwatch/phone APIs (future version).</li>
+    </ul>
+  </div>
+
+  <p class="note">This is a prototype page showing the design and planned features.</p>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 UFV Run Club App – Non-profit student project.</p>
+</footer>
+
+</body>
+</html>

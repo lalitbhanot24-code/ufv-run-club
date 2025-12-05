@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ethics – UFV Run Club App</title>
+
+  <!-- INTERNAL CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Helvetica", Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f7fa;
+      color: #333;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, #004b8d, #006bb3);
+      padding: 20px 0;
+      color: #fff;
+      margin-bottom: 30px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    nav a {
+      color: #fff;
+      background: rgba(255,255,255,0.15);
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: rgba(255,255,255,0.35);
+    }
+
+    /* ACTIVE TAB */
+    nav a[href="ethics.html"] {
+      background: #00c853;
+      font-weight: bold;
+    }
+
+    /* PAGE TITLE */
+    main h2 {
+      text-align: center;
+      font-size: 32px;
+      color: #004b8d;
+      margin-bottom: 20px;
+    }
+
+    main p {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 25px auto;
+      font-size: 17px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    /* ETHICS GRID */
+    .ethics-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      max-width: 900px;
+      margin: 0 auto 40px auto;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .ethic-card {
+      background: #ffffff;
+      padding: 22px 24px;
+      border-radius: 12px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .ethic-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+    }
+
+    .ethic-card h3 {
+      color: #004b8d;
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .ethic-card p {
+      font-size: 15.5px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* ANIMATION */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #e9ecef;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>UFV Run Club App</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="runtracker.html">Run Tracker</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="ethics.html">Ethics</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="challenges.html">Challenges</a></li>
+        <li><a href="donations.html">Donations</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <h2>Ethical Foundations</h2>
+
+  <p>
+    The UFV Run Club App is designed using ethical frameworks from CIS and applied 
+    ethics courses. Our mission is to show how technology can be built responsibly, 
+    transparently, and for the public good.
+  </p>
+
+  <div class="ethics-grid">
+
+    <div class="ethic-card">
+      <h3>Fairness & Accessibility</h3>
+      <p>
+        No paywalls. No targeting vulnerable populations.  
+        Every UFV student, worker, and community member can participate equally.
+      </p>
+    </div>
+
+    <div class="ethic-card">
+      <h3>Privacy & Consent</h3>
+      <p>
+        We collect only the minimum required data and provide clear options 
+        for consent. No selling or sharing of personal information.
+      </p>
+    </div>
+
+    <div class="ethic-card">
+      <h3>Non-Profit Commitment</h3>
+      <p>
+        All profits support UFV students through scholarships, wellness 
+        programs, and community initiatives — not corporations.
+      </p>
+    </div>
+
+    <div class="ethic-card">
+      <h3>Transparency</h3>
+      <p>
+        Funding, data practices, project goals, and governance are explained in 
+        simple language. Users always know how the app operates.
+      </p>
+    </div>
+
+  </div>
+
+  <p>
+    In the full class presentation, each of the <strong>9.5 ethical theories</strong> will be connected to 
+    these app features, demonstrating how the UFV Run Club App upholds ethical design 
+    principles.
+  </p>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 UFV Run Club App – Non-profit student project.</p>
+</footer>
+
+</body>
+</html>
